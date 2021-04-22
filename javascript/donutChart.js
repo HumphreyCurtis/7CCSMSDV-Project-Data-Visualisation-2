@@ -95,7 +95,6 @@ d3.select("button#totalVaccinations")
 })
 
 function change(data) {
-    console.log(data); 
     svg.selectAll('.circle-legend').remove();
     var pie = d3.pie()
         .value(function (d) {
@@ -117,8 +116,6 @@ function change(data) {
 }
 
 function drawLegend(data) {
-    console.log(data); 
-
     svg.selectAll('.circle-legend').remove(); 
     var legend = svg.selectAll('.legend')
         .data(color.domain())
@@ -144,7 +141,6 @@ function drawLegend(data) {
         .attr('x', legendRectSize + legendSpacing)
         .attr('y', legendRectSize - legendSpacing)
         .text(function (data) {
-            console.log(data.title)
             return data;
         }); 
 }

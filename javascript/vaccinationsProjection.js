@@ -97,7 +97,7 @@ function draw() {
             tooltip.classed('hidden', false) /* Adds functionality on hover + addeed code to deduce current underlying metric */
                 .html("<h6>" + d.properties.country + " " + map.metric + ": " + d.properties.dataPoint + "</h6>")
                 .attr('style', 'left:' + (d3.event.pageX + 15) + 'px; top:' + (d3.event.pageY + 20) + 'px');
-            console.log(d.properties.dataPoint); /* Logging values in console */
+            // console.log(d.properties.dataPoint); /* Logging values in console */
         })
         .on('mouseout', function () {
             tooltip.classed('hidden', true);
@@ -147,7 +147,7 @@ function change() {
         d3.median(map.features, d => d.properties.dataPoint),
         d3.max(map.features, d => d.properties.dataPoint)
     ]);
-    console.log("Max value = " + d3.max(map.features, d => d.properties.dataPoint));
+    // console.log("Max value = " + d3.max(map.features, d => d.properties.dataPoint));
     draw();
     drawLegend();
 }

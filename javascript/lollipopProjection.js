@@ -100,7 +100,7 @@ function update(selectedVar) {
       .transition()
       .duration(1000)
       .attr("x1", function (d) {
-        console.log(x(d.group));
+        // console.log(x(d.group));
         return x(d.group);
       })
       .attr("x2", function (d) {
