@@ -1,0 +1,67 @@
+<!-- Source used: https://bl.ocks.org/eetuko/4535086c3fabe76a173b432c44b254c6 -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Vaccinations chloropleth</title>
+  <link rel="stylesheet" href="../css/vaccinations.css">
+  <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
+  <script src="https://unpkg.com/topojson@3"></script>
+  <script src="https://unpkg.com/topojson-client@3"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" />
+</head>
+
+<body>
+  <nav id="navbar">
+    <h3>D3 project</h3>
+    <!--content stacking for smaller screens-->
+    <ul class="nav nav-pills nav-stacked">
+      <!--internal linking to the respective sections-->
+      <a class="nav-link" href="../index.html" rel="internal">
+        <li>Introduction</li>
+      </a>
+      <a class="nav-link" href="../index.html" rel="internal">
+        <li>Key information</li>
+      </a>
+      <a class="nav-link" href="../index.html" rel="internal">
+        <li>About the data</li>
+      </a>
+      <!-- <a class="nav-link" href="./covidProjection.html" rel="internal">
+        <li>Coronavirus chloropleth</li>
+      </a> -->
+      <a class="nav-link" href="vaccinationsProjection.html" rel="internal">
+        <li>Vaccination chloropleth</li>
+      </a>
+      <a class="nav-link" href="./lollipopProjection.html" rel="internal">
+        <li>Vaccination lollipop chart</li>
+      </a>
+      <a class="nav-link" href="./donutProjection.html" rel="internal">
+        <li>Most vaccinated nations</li>
+      </a>
+    </ul>
+
+  </nav>
+
+
+
+  <p>
+    Choose your metric from the list:
+    <select id="metrics">
+      <option value="totalVaccinationsAsProportionGlobally">Total Vaccinated Proportionally</option>
+      <option value="peopleVaccinatedAsProportionGlobally">People Vaccinated Proportionally</option>
+      <option value="totalVaccinations">Total Vaccinations</option>
+      <option value="peopleVaccinated">People Vaccinated</option>
+    </select>
+  </p>
+  <div class="visualisation"> </div>
+  <small>Source: <a href="https://ourworldindata.org/coronavirus-source-data" target="blank">OWID</a></small>
+  <script src="../javascript/vaccinationsProjection.js"></script>
+
+
+</body>
+
+</html>

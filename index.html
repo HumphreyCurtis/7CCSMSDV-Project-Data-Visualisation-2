@@ -1,0 +1,172 @@
+<!-- Source used: https://hackr.io/blog/html-projects -->
+
+
+<html>
+<!--This uses the default bootstrap stylesheet-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Provides a full-width container that can expand or collapse based on the size of viewport-->
+
+<head>
+    <title>Homepage</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 col-sm-12 col-xs-12">
+                <nav id="navbar">
+                    <h3>D3 project</h3>
+                    <!--content stacking for smaller screens-->
+                    <ul class="nav nav-pills nav-stacked">
+                        <!--internal linking to the respective sections-->
+                        <a class="nav-link" href="index.html" rel="internal">
+                            <li>Introduction</li>
+                        </a>
+                        <a class="nav-link" href="index.html" rel="internal">
+                            <li>Key information</li>
+                        </a>
+                        <a class="nav-link" href="index.html" rel="internal">
+                            <li>About the data</li>
+                        </a>
+                        <!-- <a class="nav-link" href="html/covidProjection.html" rel="internal">
+                            <li>Coronavirus chloropleth</li>
+                        </a> -->
+                        <a class="nav-link" href="html/vaccinationsProjection.html" rel="internal">
+                            <li>Vaccination chloropleth</li>
+                        </a>
+                        <a class="nav-link" href="html/lollipopProjection.html" rel="internal">
+                            <li>Vaccination lollipop chart</li>
+                        </a>
+                        <a class="nav-link" href="html/donutProjection.html" rel="internal">
+                            <li>Most vaccinated nations</li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-10 col-sm-12 col-xs-12">
+                <h1>7CCSMSDV Data Visualisation Project 2021</h1>
+                <h3>Kings College London</h3>
+                <h5>Humphrey Curtis</h5>
+                <h5><a>k20103881@kcl.ac.uk</a></h5>
+                <main id="main-doc">
+                    <section class="main-section" id="Introduction">
+                        <h3 style="background: black; color: white">Introduction</h3>
+                        <article>
+                            <p>These visualisations serve to answer Research Question 3 of part 3 of the Data
+                                Visualisation exam:</p>
+                            <li>
+                                <code>
+                                    Analyse the global rollout of vaccines all over the world. What nations have rolled
+                                    out vaccinations most effectively?
+                                </code>
+                            </li>
+                            <p></p>
+                            <p>Providing data for this research question - there are three visualistions in total
+                                clickcable under the left-side navbar:</p>
+                            <li>
+                                A vaccination chloropleth map
+                            </li>
+                            <li>
+                                A vaccination lollipop chart
+                            </li>
+                            <li>
+                                Lastly, a donut chart of the most vaccinated nations
+                            </li>
+
+                        </article>
+                    </section>
+                    <section class="main-section" id="Key_Information">
+                        <h3 style="background: black; color: white">Key information</h3>
+                        <article>
+                            <p>Development of the visualisations was multi-faceted and all the visualisations use:</p>
+                            <li>HTML and JavaScript</li>
+                            <li>D3.js v.4 and v.5 via: <a href="https://d3js.org">https://d3js.org/</a></li>
+                            <li>Some degree of responsiveness on hover and zoom</li>
+                            <li>Some css work for a smoother experience</li>
+                            <p></p>
+                            <p>As an open source project each visualisation is based on other developers code as
+                                follows:</p>
+                            <p>The vaccination chloropleth:</p>
+                            <li>Based on code developed by Mikael Koutero and sourced at:
+                                <a
+                                    href="https://bl.ocks.org/eetuko/4535086c3fabe76a173b432c44b254c6">https://bl.ocks.org/eetuko/4535086c3fabe76a173b432c44b254c6</a>
+                            </li>
+                            <li>The use of the topojson to load the shape file</li>
+                            <li>The addition of a legend using Susie Lu's legend: <a
+                                    href="https://d3-legend.susielu.com/">https://d3-legend.susielu.com/</a>
+                            </li>
+                            <p></p>
+                            <p>The vaccination lollipop chart:</p>
+                            <li>Based on code developed by Yan Holtz and sourced at:
+                                <a
+                                    href="https://www.d3-graph-gallery.com/graph/lollipop_animationStart.html">https://www.d3-graph-gallery.com/graph/lollipop_animationStart.html</a>
+                            </li>
+                            <p></p>
+                            <p>The most vaccinated nations donut chart:</p>
+                            <li>Based on code developed by KJ Schmidt and sourced at:
+                                <a
+                                    href="https://medium.com/@kj_schmidt/making-an-animated-donut-chart-with-d3-js-17751fde4679">https://medium.com/@kj_schmidt/making-an-animated-donut-chart-with-d3-js-17751fde4679</a>
+                            </li>
+                            <p></p>
+                            </article>
+                    </section>
+                    <section class="main-section" id="About_Topic">
+                        <h3 style="background: black; color: white">About the data</h3>
+                        <article>
+                            <p>The data for the three visualisations comes from a single source:
+                            </p>
+                            <li>
+                                The data is sourced from March/June OWID data via:
+                                <a
+                                    href="https://github.com/owid/covid-19-data/tree/master/public/data">https://github.com/owid/covid-19-data/tree/master/public/data</a>
+                            </li>
+                            <p></p>
+                            <p>
+                                Significant data amalgamating, parsing and cleaning of the data was written in Java to
+                                create custom CSV and JSON
+                                files:
+                            </p>
+                            <li>
+                                The JSON-Simple library was sourced and used to parse clean and amalgamate data via:
+                                <a
+                                    href="http://www.java2s.com/Code/Jar/j/Downloadjsonsimple11jar.htm">http://www.java2s.com/Code/Jar/j/Downloadjsonsimple11jar.htm</a>
+                                - this is accessible under the respective GitHub folders
+                            </li>
+                            <p></p>
+                        </article>
+                    </section>
+                    <section class="main-section" id="Topic_2">
+                        <h3 style="background: black; color: white">Vaccination chloropleth calculations</h3>
+                        <p>The vaccination chloropleth maps display divided geographical areas or regions are coloured,
+                            shaded or patterned in relation to the variable selected by the user.</p>
+                        <p>Each vaccination chloropleth comes with 4 optional metrics choosable via the dropdown (all
+                            mathematic calculations are rounded to 3 decimal places):</p>
+                        <li>Total vaccinations - Total number of vaccinations used by each nation for their population.
+                        </li>
+                        <li>People vaccinated - Total number of people to recieve at least one vaccination within each
+                            nation.</li>
+                        <li>Total vaccinated proportionally - To gain a proportional metric of each nation's vaccination
+                            rollout with: <code>(Total vaccinated in current nation / Total vaccinated worldwide) x
+                                100</code></li>
+                        <li>People vaccinated proportionally - To gain a proportional metric of each nation's
+                            vaccination rollout with: <code>(People vaccinated in current nation / People vaccinated
+                                worldwide) x 100</code></li>
+                        <p></p>
+                        <p>Other interactive features of the vaccination chloropleths include:</p>
+                        <li>Hover on countries for an accurate metric and pop up of underlying value</li>
+                        <li>Furthermore the maps are fully dynamic enabling zoom via CTRL and SCROLL Windows or CMD and
+                            SCROLL Mac</p>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <img src="images/kingsLogo.png"
+        style="width: 320px; height: 290px; margin-left: auto; margin-right: auto; display: block; padding-top: 50px; padding-bottom: 10px;"
+        alt="Kings Logo">
+</body>
+
+</html>

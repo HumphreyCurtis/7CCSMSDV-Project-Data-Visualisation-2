@@ -1,0 +1,64 @@
+<!-- Souce used: https://www.d3-graph-gallery.com/graph/lollipop_animationStart.html  -->
+
+
+
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<head>
+  <title>Lollipop projection</title>
+  <link rel="stylesheet" href="../css/lollipop.css">
+  </link>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" />
+</head>
+
+<body>
+  <nav id="navbar">
+    <h3>D3 project</h3>
+    <!--content stacking for smaller screens-->
+    <ul class="nav nav-pills nav-stacked">
+      <!--internal linking to the respective sections-->
+      <a class="nav-link" href="../index.html" rel="internal">
+        <li>Introduction</li>
+      </a>
+      <a class="nav-link" href="../index.html" rel="internal">
+        <li>Key information</li>
+      </a>
+      <a class="nav-link" href="../index.html" rel="internal">
+        <li>About the data</li>
+      </a>
+      <!-- <a class="nav-link" href="./covidProjection.html" rel="internal">
+        <li>Coronavirus chloropleth</li>
+      </a> -->
+      <a class="nav-link" href="./vaccinationsProjection.html" rel="internal">
+        <li>Vaccination chloropleth</li>
+      </a>
+      <a class="nav-link" href="./lollipopProjection.html" rel="internal">
+        <li>Vaccination lollipop chart</li>
+      </a>
+      <a class="nav-link" href="./donutProjection.html" rel="internal">
+        <li>Most vaccinated nations</li>
+      </a>
+    </ul>
+  </nav>
+
+  <!-- Add 2 buttons -->
+  <button id="btn_total" onclick="update('TotalVaccinations')">Total Vaccinations</button>
+  <button id="btn_people" onclick="update('PeopleVaccinated')">People Vaccinated</button>
+
+
+  <!-- Create a div where the graph will take place -->
+  <div id="my_dataviz"></div>
+  <small>Source: <a href="https://ourworldindata.org/coronavirus-source-data" target="blank">OWID</a></small>
+
+  <!-- Load d3.js -->
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <script src="../javascript/lollipopProjection.js"></script>
+
+</body>
+
+
+</html>

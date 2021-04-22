@@ -1,0 +1,67 @@
+<!-- Source used: https://github.com/kjschmidt913/data-visualization/blob/master/index.html
+https://medium.com/@kj_schmidt/making-an-animated-donut-chart-with-d3-js-17751fde4679 -->
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Donut projection</title>
+  <link rel="icon" type="image/png" href="chart-icon-color.png">
+  <link rel="stylesheet" href="../css/donutChart.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"
+    integrity="sha512-wNH6xsp2n8CfB91nrBtfc4sfLwYPBMjSWVUwQOp60AYYXH6i8yCwuKFZ4rgK2i6pQek/b+bSyR7b01/922IBzQ=="
+    crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" />
+</head>
+
+<body>
+
+  <nav id="navbar">
+    <h3>D3 project</h3>
+    <!--content stacking for smaller screens-->
+    <ul class="nav nav-pills nav-stacked">
+      <!--internal linking to the respective sections-->
+      <a class="nav-link" href="../index.html" rel="internal">
+        <li>Introduction</li>
+      </a>
+      <a class="nav-link" href="../index.html" rel="internal">
+        <li>Key information</li>
+      </a>
+      <a class="nav-link" href="../index.html" rel="internal">
+        <li>About the data</li>
+      </a>
+      <!-- <a class="nav-link" href="covidProjection.html" rel="internal">
+        <li>Coronavirus chloropleth</li>
+      </a> -->
+      <a class="nav-link" href="./vaccinationsProjection.html" rel="internal">
+        <li>Vaccination chloropleth</li>
+      </a>
+      <a class="nav-link" href="./lollipopProjection.html" rel="internal">
+        <li>Vaccination lollipop chart</li>
+      </a>
+      <a class="nav-link" href="./donutPerforming.html" rel="internal">
+        <li>Most vaccinated nations</li>
+      </a>
+    </ul>
+  </nav>
+
+
+  <h4 class="mb-0 mt-4">Donut chart of highly vaccinated nations</h4>
+  <div class="mx-sm-auto mx-0 col-lg-6 col-3 text-center px-0">
+    <div class="btn-group btn-group-toggle mr-4" data-toggle="buttons">
+      <button id="totalVaccinations" class="btn btn-secondary">Total vaccinations</button>
+      <button id="peopleVaccinated" class="btn btn-secondary">People vaccinated</button>
+    </div>
+    <div id="donut"></div>
+    <small>Source: <a href="https://ourworldindata.org/coronavirus-source-data" target="blank">OWID</a></small>
+  </div>
+
+  <script src="../javascript/donutChart.js"></script>
+</body>
+
+</html>

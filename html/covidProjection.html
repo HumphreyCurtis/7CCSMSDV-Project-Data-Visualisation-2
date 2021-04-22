@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Covid-19 world-wide totals per million population maps</title>
+  <link rel="stylesheet" href="../css/coronavirus.css">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://unpkg.com/topojson@3"></script>
+  <script src="https://unpkg.com/topojson-client@3"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <nav id="navbar">
+    <h3>D3 project</h3>
+    <!--content stacking for smaller screens-->
+    <ul class="nav nav-pills nav-stacked">
+      <!--internal linking to the respective sections-->
+      <a class="nav-link" href="../index.html" rel="internal">
+        <li>Introduction</li>
+      </a>
+      <a class="nav-link" href="../index.html" rel="internal">
+        <li>Key information</li>
+      </a>
+      <a class="nav-link" href="../index.html" rel="internal">
+        <li>About the data</li>
+      </a>
+      <a class="nav-link" href="covidProjection.html" rel="internal">
+        <li>Coronavirus chloropleth</li>
+      </a>
+      <a class="nav-link" href="./vaccinationsProjection.html" rel="internal">
+        <li>Vaccination chloropleth</li>
+      </a>
+      <a class="nav-link" href="./lollipopProjection.html" rel="internal">
+        <li>Vaccination lollipop chart</li>
+      </a>
+      <a class="nav-link" href="./donutProjection.html" rel="internal">
+        <li>Most vaccinated nations</li>
+      </a>
+    </ul>
+  </nav>
+
+  <p>
+    Choose your metric from the list:
+    <select id="metrics">
+      <option value="casesPerOneMillion" selected="selected">Cases</option>
+      <option value="deathsPerOneMillion">Deaths</option>
+      <option value="testsPerOneMillion">Tests</option>
+      <option value="activePerOneMillion">Active</option>
+      <option value="recoveredPerOneMillion">Recovered</option>
+      <option value="criticalPerOneMillion">Critical</option>
+    </select>
+  </p>
+  <div class="visualisation"> </div>
+  <script src="../javascript/coronavirusProjection.js"></script>
+</body>
+
+</html>

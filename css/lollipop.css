@@ -1,0 +1,39 @@
+/* 
+*
+* CSS Styling for lollipopProjection.js  
+*
+*/
+
+circle:hover {
+    fill: red;
+}
+
+svg {
+    display: block;
+    margin: auto;
+}
+
+#btn_total {
+    margin: 20px;
+    background-color: #69b3a2;
+}
+
+#btn_people {
+    background-color: #ffa600;
+}
+
+div.donut-tip {
+    position: absolute;
+    text-align: center;
+    padding: .5rem;
+    background: #FFFFFF;
+    color: #313639;
+    border: 1px solid #313639;
+    border-radius: 8px;
+    pointer-events: none;
+    font-size: 0.5rem;
+}
+
+small {
+    padding-left: 20px;
+}
