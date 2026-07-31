@@ -9,3 +9,5 @@ mvn compile exec:java
 ```
 
 The original code writes `februaryVaccinationData.json` in this folder. That generated file is ignored. `historical-output.json` preserves an earlier coursework export, while the final chart-ready datasets used by the visualisations are under `../data/`.
+
+`class-diagram.plantuml` preserves the original model of the `Country`, `World`, reader and writer classes.

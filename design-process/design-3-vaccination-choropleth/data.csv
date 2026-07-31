@@ -1,0 +1,190 @@
+﻿HDI Rank,Country,Vaccine ,% of population
+1, Norway,Yes,1
+2, Ireland,Yes,0.24
+2, Switzerland,Yes,1
+4," Hong Kong, China (SAR)",Yes,4.73
+4, Iceland,Yes,1
+6, Germany,Yes,1
+7, Sweden,Yes,3.17
+8, Australia,Yes,1
+8, Netherlands,Yes,0.01
+10, Denmark,Yes,7.2
+11, Finland,Yes,0.04
+11, Singapore,Yes,0.01
+13, United Kingdom,Yes,19
+14, Belgium,Yes,0.01
+14, New Zealand,Yes,0.01
+16, Canada,Yes,1
+17, United States,Yes,6.23
+18, Austria,Yes,1
+19, Israel,Yes,1
+19, Japan,Yes,1
+19, Liechtenstein,No,1.02
+22, Slovenia,Yes,1
+23, Korea (Republic of),Yes,1
+23, Luxembourg,Yes,3.72
+25, Spain,Yes,0.01
+26, France,Yes,3.66
+27, Czechia,Yes,1
+28, Malta,No,1
+29, Estonia,Yes,1
+29, Italy,Yes,0.01
+31, United Arab Emirates,Yes,1
+32, Greece,Yes,5.42
+33, Cyprus,Yes,1
+34, Lithuania,Yes,1
+35, Poland,Yes,23.59
+36, Andorra,Yes,0.03
+37, Latvia,Yes,1.15
+38, Portugal,Yes,1
+39, Slovakia,Yes,1
+40, Hungary,Yes,1
+40, Saudi Arabia,Yes,3.7
+42, Bahrain,Yes,0.01
+43, Chile,Yes,5.73
+43, Croatia,Yes,0.01
+45, Qatar,Yes,13.28
+46, Argentina,Yes,6.38
+47, Brunei Darussalam,Yes,9.86
+48, Montenegro,No,1
+49, Romania,Yes,1
+50, Palau,No,1
+51, Kazakhstan,No,0.01
+52, Russian Federation,Yes,1
+53, Belarus,No,1
+54, Turkey,Yes,1
+55, Uruguay,No,1
+56, Bulgaria,Yes,8.6
+57, Panama,Yes,1
+58, Bahamas,Yes,1
+58, Barbados,Yes,1
+60, Oman,No,9.34
+61, Georgia,Yes,6.47
+62, Costa Rica,Yes,6.98
+62, Malaysia,Yes,1
+64, Kuwait,No,0.01
+64, Serbia,Yes,6.98
+66, Mauritius,Yes,1
+67, Seychelles,Yes,7.76
+67, Trinidad and Tobago,No,1
+69, Albania,Yes,1
+70, Cuba,Yes,1
+70, Iran (Islamic Republic of),No,1
+72, Sri Lanka,Yes,1
+73, Bosnia and Herzegovina,No,1
+74, Grenada,No,0.01
+74, Mexico,Yes,10
+74, Saint Kitts and Nevis,No,11.76
+74, Ukraine,Yes,9.32
+78, Antigua and Barbuda,No,1.57
+79, Peru,Yes,1.32
+79, Thailand,No,1
+81, Armenia,No,1
+82, North Macedonia,No,8.35
+83, Colombia,Yes,55.66
+84, Brazil,Yes,7.04
+85, China,Yes,1
+86, Ecuador,Yes,0.1
+86, Saint Lucia,No,1
+88, Azerbaijan,Yes,1
+88, Dominican Republic,No,1
+90, Moldova (Republic of),No,1
+91, Algeria,No,1
+92, Lebanon,Yes,1
+93, Fiji,No,1
+94, Dominica,No,1
+95, Maldives,Yes,3.69
+95, Tunisia,No,1.1
+97, Saint Vincent and the Grenadines,No,1
+97, Suriname,No,1
+99, Mongolia,No,1
+100, Botswana,No,1
+101, Jamaica,No,8.7
+102, Jordan,No,5.63
+103, Paraguay,Yes,1
+104, Tonga,No,1
+105, Libya,No,0.01
+106, Uzbekistan,No,0.01
+107, Bolivia (Plurinational State of),Yes,1
+107, Indonesia,Yes,14.47
+107, Philippines,Yes,1
+110, Belize,No,1
+111, Samoa,No,1
+111, Turkmenistan,No,2.26
+113, Venezuela (Bolivarian Republic of),No,1
+114, South Africa,Yes,1
+115," Palestine, State of",No,1
+116, Egypt,No,1
+117, Marshall Islands,No,1
+117, Viet Nam,No,1
+119, Gabon,No,1
+120, Kyrgyzstan,No,1
+121, Morocco,No,1
+122, Guyana,No,8.07
+123, Iraq,No,0.01
+124, El Salvador,No,1
+125, Tajikistan,No,1
+126, Cabo Verde,No,1
+127, Guatemala,No,1
+128, Nicaragua,No,8.15
+129, Bhutan,No,1.59
+130, Namibia,No,1
+131, India,Yes,1
+132, Honduras,Yes,1
+133, Bangladesh,Yes,0.01
+134, Kiribati,No,0.01
+135, Sao Tome and Principe,No,0.01
+136, Micronesia (Federated States of),No,1.1
+137, Lao People's Democratic Republic,No,0.01
+138, Eswatini (Kingdom of),No,7.58
+138, Ghana,No,7.37
+140, Vanuatu,No,0.01
+141, Timor-Leste,No,6.88
+142, Nepal,No,3.72
+143, Kenya,No,0.01
+144, Cambodia,Yes,1
+145, Equatorial Guinea,No,1
+146, Zambia,No,1
+147, Myanmar,No,1
+148, Angola,No,1
+149, Congo,No,0.05
+150, Zimbabwe,No,0.01
+151, Solomon Islands,No,16.72
+151, Syrian Arab Republic,No,61.91
+153, Cameroon,No,1
+154, Pakistan,No,9.04
+155, Papua New Guinea,No,6.93
+156, Comoros,No,7.46
+157, Mauritania,No,7.82
+158, Benin,No,0.01
+159, Uganda,No,1
+160, Rwanda,Yes,7.82
+161, Nigeria,No,0.01
+162, Cote d'Ivoire,Yes,1
+163, Tanzania (United Republic of),No,1
+164, Madagascar,No,6.75
+165, Lesotho,No,7.8
+166, Djibouti,No,1
+167, Togo,No,1
+168, Senegal,Yes,1
+169, Afghanistan,No,1
+170, Haiti,No,1
+170, Sudan,No,1
+172, Gambia,No,1
+173, Ethiopia,No,1
+174, Malawi,No,1
+175, Congo (Democratic Republic of the),No,0.01
+175, Guinea-Bissau,No,1
+175, Liberia,No,1
+178, Guinea,No,0.01
+179, Yemen,No,0.01
+180, Eritrea,No,34.59
+181, Mozambique,No,19.03
+182, Burkina Faso,No,1
+182, Sierra Leone,No,1
+184, Mali,No,1
+185, Burundi,No,1
+185, South Sudan,No,1
+187, Chad,No,1
+188, Central African Republic,No,1
+189, Niger,No,1

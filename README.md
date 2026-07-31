@@ -2,7 +2,7 @@
 
 An interactive D3.js exploration of the early global COVID-19 vaccination rollout, produced for the **7CCSMSDV Simulation and Data Visualisation** module during my MSc at King's College London in 2021.
 
-The project asks: **How did the global vaccine rollout differ between nations, and which countries had progressed furthest?**
+The project asks: **How did the global vaccine rollout differ between nations, and which countries had progressed furthest?** The repository also preserves the four-stage visual design exploration that led to the final dashboard.
 
 ## Visualisations
 
@@ -11,6 +11,10 @@ The project asks: **How did the global vaccine rollout differ between nations, a
 - **Donut chart** - compare the five leading national totals with the remainder of the world.
 
 [Open the live visualisation](https://humphreycurtis.github.io/7CCSMSDV-Project-Data-Visualisation-2/) · [Read the submitted report](docs/KCL-COVID-19-Data-Visualisation-Report.pdf)
+
+## Design process
+
+Before implementing the final dashboard, I explored four visual directions: a temporal bubble map, an HDI/deaths scatterplot, a vaccination choropleth and an HDI-ordered Sankey diagram. The curated [`design-process/`](design-process/) archive contains the useful sketches, concept PDFs, screenshots, prototype datasets and runnable D3 experiments.
 
 ## How it works
 
@@ -39,6 +43,7 @@ Then open `http://localhost:8000/`.
 ├── css/                    Shared and chart-specific styling
 ├── data/                   Static chart-ready datasets and world geometry
 ├── data-processing/        Java/JSON.simple preprocessing pipeline
+├── design-process/         Four curated design and D3 prototyping stages
 └── docs/                   Submitted coursework report
 ```
 
