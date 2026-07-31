@@ -1,0 +1,1002 @@
+[
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Albania",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "ALB"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Algeria",
+    "totalVaccinations": "75000",
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "DZA"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.001",
+    "name": "Andorra",
+    "totalVaccinations": "1291",
+    "totalVaccinationsAsProportionGlobally": "0.001",
+    "peopleVaccinated": "1291",
+    "iso_code": "AND"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Anguilla",
+    "totalVaccinations": "2762",
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": "2762",
+    "iso_code": "AIA"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.12",
+    "name": "Argentina",
+    "totalVaccinations": "501152",
+    "totalVaccinationsAsProportionGlobally": "0.1",
+    "peopleVaccinated": "319316",
+    "iso_code": "ARG"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.014",
+    "name": "Australia",
+    "totalVaccinations": "25000",
+    "totalVaccinationsAsProportionGlobally": "0.008",
+    "peopleVaccinated": "25000",
+    "iso_code": "AUS"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.12",
+    "name": "Austria",
+    "totalVaccinations": "254333",
+    "totalVaccinationsAsProportionGlobally": "0.08",
+    "peopleVaccinated": "230190",
+    "iso_code": "AUT"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Azerbaijan",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "AZE"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.089",
+    "name": "Bahrain",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": "170433",
+    "iso_code": "BHR"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.709",
+    "name": "Bangladesh",
+    "totalVaccinations": "1359613",
+    "totalVaccinationsAsProportionGlobally": "0.426",
+    "peopleVaccinated": "1359613",
+    "iso_code": "BGD"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.016",
+    "name": "Barbados",
+    "totalVaccinations": "29283",
+    "totalVaccinationsAsProportionGlobally": "0.01",
+    "peopleVaccinated": "29283",
+    "iso_code": "BRB"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Belarus",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "BLR"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.163",
+    "name": "Belgium",
+    "totalVaccinations": "339768",
+    "totalVaccinationsAsProportionGlobally": "0.107",
+    "peopleVaccinated": "311801",
+    "iso_code": "BEL"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.001",
+    "name": "Belize",
+    "totalVaccinations": "996",
+    "totalVaccinationsAsProportionGlobally": "0.001",
+    "peopleVaccinated": "996",
+    "iso_code": "BLZ"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Bermuda",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "BMU"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Bolivia",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "BOL"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "2.254",
+    "name": "Brazil",
+    "totalVaccinations": "4406835",
+    "totalVaccinationsAsProportionGlobally": "1.38",
+    "peopleVaccinated": "4326075",
+    "iso_code": "BRA"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.017",
+    "name": "Bulgaria",
+    "totalVaccinations": "45917",
+    "totalVaccinationsAsProportionGlobally": "0.015",
+    "peopleVaccinated": "30817",
+    "iso_code": "BGR"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.005",
+    "name": "Cambodia",
+    "totalVaccinations": "7770",
+    "totalVaccinationsAsProportionGlobally": "0.003",
+    "peopleVaccinated": "7770",
+    "iso_code": "KHM"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.393",
+    "name": "Canada",
+    "totalVaccinations": "868454",
+    "totalVaccinationsAsProportionGlobally": "0.272",
+    "peopleVaccinated": "754001",
+    "iso_code": "CAN"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Cayman Islands",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "CYM"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.03",
+    "name": "Chile",
+    "totalVaccinations": "67380",
+    "totalVaccinationsAsProportionGlobally": "0.022",
+    "peopleVaccinated": "56980",
+    "iso_code": "CHL"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "China",
+    "totalVaccinations": "52520000",
+    "totalVaccinationsAsProportionGlobally": "16.436",
+    "peopleVaccinated": null,
+    "iso_code": "CHN"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.06",
+    "name": "Colombia",
+    "totalVaccinations": "114042",
+    "totalVaccinationsAsProportionGlobally": "0.036",
+    "peopleVaccinated": "114042",
+    "iso_code": "COL"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Costa Rica",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "CRI"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.127",
+    "name": "Croatia",
+    "totalVaccinations": "95505",
+    "totalVaccinationsAsProportionGlobally": "0.091",
+    "peopleVaccinated": "61241",
+    "iso_code": "HRV"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Cyprus",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "CYP"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.127",
+    "name": "Czechia",
+    "totalVaccinations": "290599",
+    "totalVaccinationsAsProportionGlobally": "0.091",
+    "peopleVaccinated": "243106",
+    "iso_code": "CZE"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.098",
+    "name": "Denmark",
+    "totalVaccinations": "283603",
+    "totalVaccinationsAsProportionGlobally": "0.089",
+    "peopleVaccinated": "186937",
+    "iso_code": "DNK"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Dominica",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "DMA"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Dominican Republic",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "DOM"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Ecuador",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "ECU"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Egypt",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "EGY"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "El Salvador",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "SLV"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.016",
+    "name": "Estonia",
+    "totalVaccinations": "40217",
+    "totalVaccinationsAsProportionGlobally": "0.013",
+    "peopleVaccinated": "28907",
+    "iso_code": "EST"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Faeroe Islands",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "FRO"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.001",
+    "name": "Falkland Islands",
+    "totalVaccinations": "1515",
+    "totalVaccinationsAsProportionGlobally": "0.001",
+    "peopleVaccinated": "1515",
+    "iso_code": "FLK"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.079",
+    "name": "Finland",
+    "totalVaccinations": "173372",
+    "totalVaccinationsAsProportionGlobally": "0.055",
+    "peopleVaccinated": "149951",
+    "iso_code": "FIN"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.803",
+    "name": "France",
+    "totalVaccinations": "1609072",
+    "totalVaccinationsAsProportionGlobally": "0.504",
+    "peopleVaccinated": "1541079",
+    "iso_code": "FRA"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "1.047",
+    "name": "Germany",
+    "totalVaccinations": "2654004",
+    "totalVaccinationsAsProportionGlobally": "0.831",
+    "peopleVaccinated": "2010092",
+    "iso_code": "DEU"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.008",
+    "name": "Gibraltar",
+    "totalVaccinations": "20044",
+    "totalVaccinationsAsProportionGlobally": "0.007",
+    "peopleVaccinated": "13904",
+    "iso_code": "GIB"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.137",
+    "name": "Greece",
+    "totalVaccinations": "315628",
+    "totalVaccinationsAsProportionGlobally": "0.099",
+    "peopleVaccinated": "261543",
+    "iso_code": "GRC"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Greenland",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "GRL"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Grenada",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "GRD"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Guatemala",
+    "totalVaccinations": "2224",
+    "totalVaccinationsAsProportionGlobally": "0.001",
+    "peopleVaccinated": null,
+    "iso_code": "GTM"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Guernsey",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "GGY"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Guyana",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "GUY"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.002",
+    "name": "Honduras",
+    "totalVaccinations": "2684",
+    "totalVaccinationsAsProportionGlobally": "0.001",
+    "peopleVaccinated": "2684",
+    "iso_code": "HND"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.015",
+    "name": "Hong Kong",
+    "totalVaccinations": "27000",
+    "totalVaccinationsAsProportionGlobally": "0.009",
+    "peopleVaccinated": "27000",
+    "iso_code": "HKG"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.129",
+    "name": "Hungary",
+    "totalVaccinations": "322306",
+    "totalVaccinationsAsProportionGlobally": "0.101",
+    "peopleVaccinated": "247270",
+    "iso_code": "HUN"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.1",
+    "name": "Iceland",
+    "totalVaccinations": "17515",
+    "totalVaccinationsAsProportionGlobally": "0.1",
+    "peopleVaccinated": "12660",
+    "iso_code": "ISL"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "3.909",
+    "name": "India",
+    "totalVaccinations": "7505010",
+    "totalVaccinationsAsProportionGlobally": "2.349",
+    "peopleVaccinated": "7505010",
+    "iso_code": "IND"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.425",
+    "name": "Indonesia",
+    "totalVaccinations": "985855",
+    "totalVaccinationsAsProportionGlobally": "0.309",
+    "peopleVaccinated": "814585",
+    "iso_code": "IDN"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Iran",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "IRN"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.86",
+    "name": "Ireland",
+    "totalVaccinations": "230766",
+    "totalVaccinationsAsProportionGlobally": "0.76",
+    "peopleVaccinated": "151212",
+    "iso_code": "IRL"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.006",
+    "name": "Isle of Man",
+    "totalVaccinations": "13733",
+    "totalVaccinationsAsProportionGlobally": "0.005",
+    "peopleVaccinated": "10405",
+    "iso_code": "IMN"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "1.553",
+    "name": "Israel",
+    "totalVaccinations": "4662636",
+    "totalVaccinationsAsProportionGlobally": "1.46",
+    "peopleVaccinated": "2980446",
+    "iso_code": "ISR"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.714",
+    "name": "Italy",
+    "totalVaccinations": "2089539",
+    "totalVaccinationsAsProportionGlobally": "0.654",
+    "peopleVaccinated": "1370288",
+    "iso_code": "ITA"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.01",
+    "name": "Japan",
+    "totalVaccinations": "21896",
+    "totalVaccinationsAsProportionGlobally": "0.01",
+    "peopleVaccinated": "21896",
+    "iso_code": "JPN"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Jersey",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "JEY"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Jordan",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "JOR"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Kazakhstan",
+    "totalVaccinations": "5000",
+    "totalVaccinationsAsProportionGlobally": "0.001",
+    "peopleVaccinated": null,
+    "iso_code": "KAZ"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Kuwait",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "KWT"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.01",
+    "name": "Latvia",
+    "totalVaccinations": "29905",
+    "totalVaccinationsAsProportionGlobally": "0.01",
+    "peopleVaccinated": "17662",
+    "iso_code": "LVA"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Lebanon",
+    "totalVaccinations": "29820",
+    "totalVaccinationsAsProportionGlobally": "0.01",
+    "peopleVaccinated": null,
+    "iso_code": "LBN"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Liechtenstein",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "LIE"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.039",
+    "name": "Lithuania",
+    "totalVaccinations": "97129",
+    "totalVaccinationsAsProportionGlobally": "0.031",
+    "peopleVaccinated": "73209",
+    "iso_code": "LTU"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.007",
+    "name": "Luxembourg",
+    "totalVaccinations": "14252",
+    "totalVaccinationsAsProportionGlobally": "0.005",
+    "peopleVaccinated": "11925",
+    "iso_code": "LUX"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Macao",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "MAC"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.028",
+    "name": "Malaysia",
+    "totalVaccinations": "53287",
+    "totalVaccinationsAsProportionGlobally": "0.017",
+    "peopleVaccinated": "53287",
+    "iso_code": "MYS"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Maldives",
+    "totalVaccinations": "70009",
+    "totalVaccinationsAsProportionGlobally": "0.022",
+    "peopleVaccinated": null,
+    "iso_code": "MDV"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.017",
+    "name": "Malta",
+    "totalVaccinations": "46344",
+    "totalVaccinationsAsProportionGlobally": "0.015",
+    "peopleVaccinated": "32524",
+    "iso_code": "MLT"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Mauritius",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "MUS"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.329",
+    "name": "Mexico",
+    "totalVaccinations": "673327",
+    "totalVaccinationsAsProportionGlobally": "0.211",
+    "peopleVaccinated": "631485",
+    "iso_code": "MEX"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.003",
+    "name": "Moldova",
+    "totalVaccinations": "3849",
+    "totalVaccinationsAsProportionGlobally": "0.002",
+    "peopleVaccinated": "3849",
+    "iso_code": "MDA"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Monaco",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "MCO"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Mongolia",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "MNG"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Montenegro",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "MNE"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Montserrat",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "MSR"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Morocco",
+    "totalVaccinations": "2081013",
+    "totalVaccinationsAsProportionGlobally": "0.652",
+    "peopleVaccinated": null,
+    "iso_code": "MAR"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Myanmar",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "MMR"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Nepal",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "NPL"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.2",
+    "name": "Netherlands",
+    "totalVaccinations": "571145",
+    "totalVaccinationsAsProportionGlobally": "0.22",
+    "peopleVaccinated": "571145",
+    "iso_code": "NLD"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "New Zealand",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "NZL"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Northern Cyprus",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "OWID_NCY"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.057",
+    "name": "Norway",
+    "totalVaccinations": "129631",
+    "totalVaccinationsAsProportionGlobally": "0.041",
+    "peopleVaccinated": "108865",
+    "iso_code": "NOR"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.013",
+    "name": "Oman",
+    "totalVaccinations": "36206",
+    "totalVaccinationsAsProportionGlobally": "0.012",
+    "peopleVaccinated": "24773",
+    "iso_code": "OMN"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.01",
+    "name": "Pakistan",
+    "totalVaccinations": "10000",
+    "totalVaccinationsAsProportionGlobally": "0.01",
+    "peopleVaccinated": "10000",
+    "iso_code": "PAK"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Panama",
+    "totalVaccinations": "12441",
+    "totalVaccinationsAsProportionGlobally": "0.004",
+    "peopleVaccinated": null,
+    "iso_code": "PAN"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Paraguay",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "PRY"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.129",
+    "name": "Peru",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": "246999",
+    "iso_code": "PER"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Philippines",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "PHL"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.549",
+    "name": "Poland",
+    "totalVaccinations": "1342435",
+    "totalVaccinationsAsProportionGlobally": "0.421",
+    "peopleVaccinated": "1053245",
+    "iso_code": "POL"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.141",
+    "name": "Portugal",
+    "totalVaccinations": "338566",
+    "totalVaccinationsAsProportionGlobally": "0.106",
+    "peopleVaccinated": "269814",
+    "iso_code": "PRT"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Qatar",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "QAT"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.312",
+    "name": "Romania",
+    "totalVaccinations": "721184",
+    "totalVaccinationsAsProportionGlobally": "0.226",
+    "peopleVaccinated": "598136",
+    "iso_code": "ROU"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.324",
+    "name": "Russia",
+    "totalVaccinations": "28500",
+    "totalVaccinationsAsProportionGlobally": "0.244",
+    "peopleVaccinated": "28500",
+    "iso_code": "RUS"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Rwanda",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "RWA"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Saint Helena",
+    "totalVaccinations": "107",
+    "totalVaccinationsAsProportionGlobally": "0.0",
+    "peopleVaccinated": null,
+    "iso_code": "SHN"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Saint Lucia",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "LCA"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.001",
+    "name": "San Marino",
+    "totalVaccinations": "1383",
+    "totalVaccinationsAsProportionGlobally": "0.001",
+    "peopleVaccinated": "1383",
+    "iso_code": "SMR"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Saudi Arabia",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "SAU"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.021",
+    "name": "Senegal",
+    "totalVaccinations": "39938",
+    "totalVaccinationsAsProportionGlobally": "0.013",
+    "peopleVaccinated": "39938",
+    "iso_code": "SEN"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.284",
+    "name": "Serbia",
+    "totalVaccinations": "544209",
+    "totalVaccinationsAsProportionGlobally": "0.171",
+    "peopleVaccinated": "544209",
+    "iso_code": "SRB"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.02",
+    "name": "Seychelles",
+    "totalVaccinations": "41694",
+    "totalVaccinationsAsProportionGlobally": "0.014",
+    "peopleVaccinated": "37714",
+    "iso_code": "SYC"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.284",
+    "name": "Singapore",
+    "totalVaccinations": "256000",
+    "totalVaccinationsAsProportionGlobally": "0.324",
+    "peopleVaccinated": "256000",
+    "iso_code": "SGP"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.096",
+    "name": "Slovakia",
+    "totalVaccinations": "214403",
+    "totalVaccinationsAsProportionGlobally": "0.068",
+    "peopleVaccinated": "183967",
+    "iso_code": "SVK"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.029",
+    "name": "Slovenia",
+    "totalVaccinations": "80249",
+    "totalVaccinationsAsProportionGlobally": "0.026",
+    "peopleVaccinated": "54192",
+    "iso_code": "SVN"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.036",
+    "name": "South Africa",
+    "totalVaccinations": "67303",
+    "totalVaccinationsAsProportionGlobally": "0.022",
+    "peopleVaccinated": "67303",
+    "iso_code": "ZAF"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.081",
+    "name": "South Korea",
+    "totalVaccinations": "154421",
+    "totalVaccinationsAsProportionGlobally": "0.049",
+    "peopleVaccinated": "154421",
+    "iso_code": "KOR"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "1.79",
+    "name": "Spain",
+    "totalVaccinations": "2561608",
+    "totalVaccinationsAsProportionGlobally":"1.518",
+    "peopleVaccinated": "1491517",
+    "iso_code": "ESP"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Sri Lanka",
+    "totalVaccinations": "210405",
+    "totalVaccinationsAsProportionGlobally": "0.066",
+    "peopleVaccinated": null,
+    "iso_code": "LKA"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.349",
+    "name": "Sweden",
+    "totalVaccinations": "319838",
+    "totalVaccinationsAsProportionGlobally": "0.309",
+    "peopleVaccinated": "285614",
+    "iso_code": "SWE"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.23",
+    "name": "Switzerland",
+    "totalVaccinations": "541849",
+    "totalVaccinationsAsProportionGlobally": "0.17",
+    "peopleVaccinated": "439900",
+    "iso_code": "CHE"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Thailand",
+    "totalVaccinations": "319",
+    "totalVaccinationsAsProportionGlobally": "0.0",
+    "peopleVaccinated": null,
+    "iso_code": "THA"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Trinidad and Tobago",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "TTO"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Turkey",
+    "totalVaccinations": "2795116",
+    "totalVaccinationsAsProportionGlobally": "0.875",
+    "peopleVaccinated": null,
+    "iso_code": "TUR"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Turks and Caicos Islands",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "TCA"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.005",
+    "name": "Ukraine",
+    "totalVaccinations": "9568",
+    "totalVaccinationsAsProportionGlobally": "0.003",
+    "peopleVaccinated": "9568",
+    "iso_code": "UKR"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "United Arab Emirates",
+    "totalVaccinations": "4201347",
+    "totalVaccinationsAsProportionGlobally": "1.315",
+    "peopleVaccinated": null,
+    "iso_code": "ARE"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "3.57",
+    "name": "United Kingdom",
+    "totalVaccinations": "7325773",
+    "totalVaccinationsAsProportionGlobally": "2.293",
+    "peopleVaccinated": "6853327",
+    "iso_code": "GBR"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "11.905",
+    "name": "United States",
+    "totalVaccinations": "27884661",
+    "totalVaccinationsAsProportionGlobally": "8.726",
+    "peopleVaccinated": "22858318",
+    "iso_code": "USA"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.034",
+    "name": "Uruguay",
+    "totalVaccinations": "63451",
+    "totalVaccinationsAsProportionGlobally": "0.02",
+    "peopleVaccinated": "63451",
+    "iso_code": "URY"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": null,
+    "name": "Venezuela",
+    "totalVaccinations": null,
+    "totalVaccinationsAsProportionGlobally": null,
+    "peopleVaccinated": null,
+    "iso_code": "VEN"
+  },
+  {
+    "peopleVaccinatedAsProportionGlobally": "0.01",
+    "name": "Zimbabwe",
+    "totalVaccinations": "18843",
+    "totalVaccinationsAsProportionGlobally": "0.006",
+    "peopleVaccinated": "18843",
+    "iso_code": "ZWE"
+  }
+]

@@ -1,69 +1,46 @@
-/* 
-*
-* CSS Styling for vaccinationProjection.js  
-*
-*/
-
-p,
-.legendTitle,
-.label {
-    font-family: sans-serif;
-}
-
 .country {
-    -webkit-transition: all 0.5s ease-out 0s;
-    -moz-transition: all 0.5s ease-out 0s;
-    -ms-transition: all 0.5s ease-out 0s;
-    -o-transition: all 0.5s ease-out 0s;
-    transition: all 0.5s ease-out 0s;
+  cursor: crosshair;
+  stroke: rgba(255, 255, 255, 0.72);
+  stroke-width: 0.45px;
+  transition: fill 140ms ease, opacity 140ms ease;
 }
 
 .country:hover {
-    fill: #000000 !important;
+  fill: #671326 !important;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
-div.tooltip {
-    background-color: #fff;
-    padding: 5px 5px;
-    text-shadow: #f5f5f5 0 1px 0;
-    font: 14pt sans-serif;
-    border: 1px solid;
-    border-color: grey;
-    border-radius: 8px;
-    opacity: 0.95;
-    position: absolute;
-    box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px;
-    -webkit-transition: all 0.5s ease-out 0s;
-    -moz-transition: all 0.5s ease-out 0s;
-    -ms-transition: all 0.5s ease-out 0s;
-    -o-transition: all 0.5s ease-out 0s;
-    transition: all 0.5s ease-out 0s;
+.tooltip {
+  position: absolute;
+  padding: 8px 10px;
+  border: 1px solid #c8cdd4;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 6px 18px rgba(24, 32, 42, 0.16);
+  pointer-events: none;
 }
 
-div.tooltip h6 {
-    margin: 0;
-    color: #212121;
+.tooltip h6 {
+  margin: 0;
+  color: #18202a;
+  font-size: 0.78rem;
+  font-weight: 700;
 }
 
 .legendTitle {
-    font-size: 12pt;
-    opacity: 0.8;
-    text-transform: capitalize;
+  fill: #3d4652;
+  font-size: 11px;
+  font-weight: 700;
 }
 
 .label {
-    font-size: 10pt;
-    opacity: 0.8;
+  fill: #5d6672;
+  font-size: 9px;
 }
 
 .legendBackground {
-    fill: #ffffff !important;
-}
-
-small {
-    padding-left: 10px;
+  fill: rgba(255, 255, 255, 0.94) !important;
 }

@@ -1,39 +1,38 @@
-/* 
-*
-* CSS Styling for lollipopProjection.js  
-*
-*/
-
-circle:hover {
-    fill: red;
+#my_dataviz {
+  width: 100%;
+  overflow-x: auto;
 }
 
-svg {
-    display: block;
-    margin: auto;
+#my_dataviz circle {
+  cursor: crosshair;
+  stroke: #ffffff;
+  stroke-width: 1px;
+  transition: r 140ms ease, fill 140ms ease;
 }
 
-#btn_total {
-    margin: 20px;
-    background-color: #69b3a2;
+#my_dataviz circle:hover {
+  r: 7px;
+  fill: #8f1d35;
 }
 
-#btn_people {
-    background-color: #ffa600;
+.myLine {
+  stroke: #b7bdc6;
+  stroke-width: 1px;
 }
 
-div.donut-tip {
-    position: absolute;
-    text-align: center;
-    padding: .5rem;
-    background: #FFFFFF;
-    color: #313639;
-    border: 1px solid #313639;
-    border-radius: 8px;
-    pointer-events: none;
-    font-size: 0.5rem;
+.donut-tip {
+  position: absolute;
+  padding: 8px 10px;
+  border: 1px solid #c8cdd4;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.97);
+  color: #18202a;
+  box-shadow: 0 6px 18px rgba(24, 32, 42, 0.16);
+  font-size: 0.78rem;
+  pointer-events: none;
 }
 
-small {
-    padding-left: 20px;
+.donut-tip h6 {
+  margin: 0;
+  font-size: inherit;
 }

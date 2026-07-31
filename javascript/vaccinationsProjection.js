@@ -3,14 +3,9 @@
  *
  */
 
-const dimension = d3.select(".visualisation")
-    .node()
-    .parentNode
-    .getBoundingClientRect();
-const margin = 90;
-const width = dimension.width;
-const height = 500;
-const aspect = width / (height - margin);
+const margin = 104;
+const width = 1120;
+const height = 620;
 const rotate = -9.9;
 
 const zoom = d3.zoom()
@@ -20,21 +15,21 @@ const zoom = d3.zoom()
         [width, height]
     ])
     .on('zoom', function () {
-        d3.select('g').attr('transform', d3.event.transform)
+        globe.attr('transform', d3.event.transform);
     });
 
 // Add the core svg block
 const svg = d3.select(".visualisation")
     .append("svg")
-    .attr("width", width)
-    .attr("height", height)
+    .attr("role", "img")
+    .attr("aria-label", "World map of COVID-19 vaccination measures")
     .attr("preserveAspectRatio", "xMinYMin meet")
     .attr("viewBox", `0 0 ${width} ${height}`)
     .call(zoom);
 
 const globe = svg.append("g");
 
-const tooltip = d3.select('.visualisation').append('div')
+const tooltip = d3.select('body').append('div')
     .attr('class', 'hidden tooltip');
 
 const projection = d3.geoMercator()
@@ -45,26 +40,30 @@ const projection = d3.geoMercator()
 const geoPath = d3.geoPath()
     .projection(projection);
 
-const colorScale = d3.scaleSqrt(["#ffeda0", "#feb24c", "#f03b20"]);
+const colorScale = d3.scaleSqrt().range(["#fff2c6", "#efa24d", "#a92f37"]);
 
 const map = {};
+
+const metricLabels = {
+    totalVaccinationsAsProportionGlobally: "Share of worldwide doses (%)",
+    peopleVaccinatedAsProportionGlobally: "Share vaccinated worldwide (%)",
+    totalVaccinations: "Total vaccinations",
+    peopleVaccinated: "People vaccinated"
+};
 
 Promise.all([
     d3.json('../data/world.topojson'),
     d3.json('../data/vaccinationsWorldwide.json')
 
 ]).then(function ([shapes, data]) {
-    var shapes = topojson.feature(shapes, "world");
+    const world = topojson.feature(shapes, shapes.objects.world);
     // save in a global context and remove antarctic.
-    map.features = shapes.features.filter((d) => d.properties.ISO_A3 !== "ATA");
+    map.features = world.features.filter((d) => d.properties.ISO_A3 !== "ATA");
     map.data = data;
+    map.dataByIso = new Map(data.map((entry) => [entry.iso_code, entry]));
     map.metric = d3.select("#metrics").property("value");
-    console.log(map.metric); /* Setting of metric value by user */
     selectData();
-    colorScale.domain([0,
-        d3.median(map.features, d => d.properties.dataPoint),
-        d3.max(map.features, d => d.properties.dataPoint)
-    ]);
+    updateColorDomain();
     draw();
     drawLegend();
 
@@ -73,16 +72,23 @@ Promise.all([
 
 function selectData() {
     map.features.forEach((d) => {
-        var entry1 = map.data.filter(t => t.iso_code == d.properties.ISO_A3)[0];
-        if (entry1) {
-            d.properties.dataPoint = entry1[map.metric];
-            d.properties.country = entry1.name;
+        const entry = map.dataByIso.get(d.properties.ISO_A3);
+        if (entry) {
+            d.properties.dataPoint = Number(entry[map.metric]) || 0;
+            d.properties.country = entry.name;
         } else {
             d.properties.dataPoint = 0;
-            d.properties.country = "N/A";
+            d.properties.country = d.properties.NAME || "No data";
         }
-    })
-};
+    });
+}
+
+function updateColorDomain() {
+    const values = map.features
+        .map((feature) => feature.properties.dataPoint)
+        .filter((value) => Number.isFinite(value) && value > 0);
+    colorScale.domain([0, d3.median(values), d3.max(values)]);
+}
 
 function draw() {
     globe.selectAll("path.country").remove();
@@ -94,15 +100,15 @@ function draw() {
         .attr('d', geoPath)
         .style("fill", d => colorScale(d.properties.dataPoint))
         .on('mousemove', function (d) {
-            tooltip.classed('hidden', false) /* Adds functionality on hover + addeed code to deduce current underlying metric */
-                .html("<h6>" + d.properties.country + " " + map.metric + ": " + d.properties.dataPoint + "</h6>")
+            const value = d.properties.dataPoint ? d3.format(",.3~g")(d.properties.dataPoint) : "No data";
+            tooltip.classed('hidden', false)
+                .html("<h6>" + d.properties.country + "</h6>" + metricLabels[map.metric] + ": " + value)
                 .attr('style', 'left:' + (d3.event.pageX + 15) + 'px; top:' + (d3.event.pageY + 20) + 'px');
-            // console.log(d.properties.dataPoint); /* Logging values in console */
         })
         .on('mouseout', function () {
             tooltip.classed('hidden', true);
         });
-};
+}
 
 function drawLegend() {
     svg.select(".legendLinear").remove();
@@ -113,14 +119,14 @@ function drawLegend() {
     var shapeWidth = 40,
         cellCount = 10,
         shapePadding = 2,
-        legendTitle = map.metric;
+        legendTitle = metricLabels[map.metric];
 
     var legendLinear = d3.legendColor()
         .title(legendTitle)
         .shape("rect")
         .shapeWidth(shapeWidth)
         .cells(cellCount)
-        .labelFormat(d3.format(".3s")) // caused bug with odd numbering 
+        .labelFormat(d3.format(".3~s"))
         .orient('horizontal')
         .shapePadding(shapePadding)
         .scale(colorScale);
@@ -133,29 +139,17 @@ function drawLegend() {
         .attr("opacity", 0.9)
         .attr("rx", 8)
         .attr("ry", 8)
-        .attr("width", legendTitle.length * 7.4)
+        .attr("width", Math.max(330, legendTitle.length * 7.2))
         .attr("height", margin);
 
     svg.select(".legendLinear")
         .call(legendLinear);
-};
+}
 
 function change() {
-    map.metric = d3.select("#metrics").property("value")
+    map.metric = d3.select("#metrics").property("value");
     selectData();
-    colorScale.domain([0,
-        d3.median(map.features, d => d.properties.dataPoint),
-        d3.max(map.features, d => d.properties.dataPoint)
-    ]);
-    // console.log("Max value = " + d3.max(map.features, d => d.properties.dataPoint));
+    updateColorDomain();
     draw();
     drawLegend();
 }
-
-d3.select(window)
-    .on("resize", function () {
-        var targetWidth = d3.select(".visualisation").node().parentNode.getBoundingClientRect();
-        svg.attr("width", targetWidth);
-        svg.attr("height", targetWidth / aspect);
-        svg.attr("viewBox", `0 0 ${width} ${height}`)
-    });

@@ -7,17 +7,18 @@ var peopleVaccinated = [];
 var totalVaccinations = []; 
 var legendRectSize = 13;
 var legendSpacing = 7;
-var width = 400;
-var height = 400;
-var radius = Math.min(width, height) / 2;
-var donutWidth = 75;
+var width = 520;
+var height = 520;
+var radius = 220;
+var donutWidth = 84;
 var color = d3.scaleOrdinal()
-.range(["#1F313F", "#1A5760", "#1C8174", "#4CAA76", "#94CF6C", "#EEEF63"]);
+    .range(["#243746", "#2f6770", "#3c8c81", "#68ae7d", "#a8ce72", "#efe26d"]);
 
 var svg = d3.select('#donut')
     .append('svg')
-    .attr('width', width)
-    .attr('height', height)
+    .attr('viewBox', '0 0 ' + width + ' ' + height)
+    .attr('role', 'img')
+    .attr('aria-label', 'Vaccination totals for five leading countries and the rest of the world')
     .append('g')
     .attr('transform', 'translate(' + (width / 2) +
         ',' + (height / 2) + ')');
@@ -41,58 +42,67 @@ var donutTip = d3.select("body").append("div")
 
 var path;
 
-Promise.all([d3.json('../data/top5PeopleVaccinated.json'), d3.json('../data/top5TotalVaccinations.json')]).then(function([totalData, totalVaccinated]){
-    peopleVaccinated = totalData;
-    totalVaccinations = totalVaccinated;
-    draw(); 
-}); 
+Promise.all([
+    d3.json('../data/top5PeopleVaccinated.json'),
+    d3.json('../data/top5TotalVaccinations.json')
+]).then(function ([peopleData, totalData]) {
+    peopleVaccinated = peopleData;
+    totalVaccinations = totalData;
+    draw();
+});
 
 
 function draw() {
+    path = svg.selectAll('path')
+        .data(pie(totalVaccinations))
+        .enter()
+        .append('path')
+        .attr('d', arc)
+        .attr('fill', function (d) {
+            return color(d.data.title);
+        })
+        .on('mouseover', function (d) {
+            d3.select(this).transition()
+                .duration(80)
+                .attr('opacity', 0.82);
+            donutTip.transition()
+                .duration(80)
+                .style('opacity', 1);
+            var percentage = Math.round((d.value / d.data.all) * 100);
+            donutTip.html('<strong>' + d.data.title + '</strong><br>' + percentage + '% · ' + d3.format(',')(d.value))
+                .style('left', (d3.event.pageX + 10) + 'px')
+                .style('top', (d3.event.pageY - 15) + 'px');
+        })
+        .on('mouseout', function () {
+            d3.select(this).transition()
+                .duration(80)
+                .attr('opacity', 1);
+            donutTip.transition()
+                .duration(80)
+                .style('opacity', 0);
+        });
 
-path = svg.selectAll('path')
-    .data(pie(totalVaccinations))
-    .enter()
-    .append('path')
-    .attr('d', arc)
-    .attr('fill', function (d, i) {
-        return color(d.data.title);
-    })
-    .attr('transform', 'translate(0, 0)')
-    .on('mouseover', function (d, i) {
-        d3.select(this).transition()
-            .duration('50')
-            .attr('opacity', '.85');
-        donutTip.transition()
-            .duration(50)
-            .style("opacity", 1);
-        let num = d.data.title + ": " + (Math.round((d.value / d.data.all) * 100)).toString() + '%' + "\nCount: " + (d.value);
-        donutTip.html(num)
-            .style("left", (d3.event.pageX + 10) + "px")
-            .style("top", (d3.event.pageY - 15) + "px");
-
-    })
-    .on('mouseout', function (d, i) {
-        d3.select(this).transition()
-            .duration('50')
-            .attr('opacity', '1');
-        donutTip.transition()
-            .duration('50')
-            .style("opacity", 0);
-    });
-
-    drawLegend(totalVaccinations); 
+    drawLegend();
 
 }
 
 d3.select("button#peopleVaccinated")
-.on("click", function () {
-    change(peopleVaccinated);
-})
+    .on("click", function () {
+        setActiveMeasure("peopleVaccinated");
+        change(peopleVaccinated);
+    });
 d3.select("button#totalVaccinations")
-.on("click", function () {
-    change(totalVaccinations);
-})
+    .on("click", function () {
+        setActiveMeasure("totalVaccinations");
+        change(totalVaccinations);
+    });
+
+function setActiveMeasure(activeId) {
+    d3.selectAll('.chart-toolbar button')
+        .attr('aria-pressed', function () {
+            return this.id === activeId ? 'true' : 'false';
+        });
+}
 
 function change(data) {
     svg.selectAll('.circle-legend').remove();
@@ -101,21 +111,18 @@ function change(data) {
             return d.value;
         }).sort(null)(data);
 
-    var radius = Math.min(width, height) / 2;
-    var donutWidth = 75;
-
     path = d3.select("#donut")
         .selectAll("path")
         .data(pie); // Compute the new angles
-    var arc = d3.arc()
+    var updatedArc = d3.arc()
         .innerRadius(radius - donutWidth)
         .outerRadius(radius);
-    path.transition().duration(500).attr("d", arc); // redrawing the path with a smooth transition
+    path.transition().duration(500).attr("d", updatedArc);
 
-    drawLegend(data); 
+    drawLegend();
 }
 
-function drawLegend(data) {
+function drawLegend() {
     svg.selectAll('.circle-legend').remove(); 
     var legend = svg.selectAll('.legend')
         .data(color.domain())
@@ -140,8 +147,7 @@ function drawLegend(data) {
     legend.append('text')
         .attr('x', legendRectSize + legendSpacing)
         .attr('y', legendRectSize - legendSpacing)
-        .text(function (data) {
-            return data;
-        }); 
+        .text(function (label) {
+            return label;
+        });
 }
-

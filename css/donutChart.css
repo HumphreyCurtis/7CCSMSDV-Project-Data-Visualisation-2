@@ -1,80 +1,26 @@
-/* 
-*
-* CSS Styling for donutChart.js  
-*
-*/
-
-div.tooltip {
-    position: absolute;
-    text-align: center;
-    padding: .2rem;
-    background: #313639;
-    color: #f9f9f9;
-    border: 0px;
-    border-radius: 8px;
-    pointer-events: none;
-    /* font-size: .7rem;				 */
-}
-
-div.donut-tip {
-    position: absolute;
-    text-align: center;
-    padding: .5rem;
-    background: #FFFFFF;
-    color: #313639;
-    border: 1px solid #313639;
-    border-radius: 8px;
-    pointer-events: none;
-    font-size: 1rem;
-}
-
 #donut {
-    padding: 20px;
+  width: min(100%, 520px);
+  margin: 0 auto;
 }
 
-.legend-pie {
-    font-size: .9rem;
+#donut path {
+  cursor: crosshair;
+  stroke: #ffffff;
+  stroke-width: 2px;
 }
 
-.legend-pie .strongly-like {
-    color: #5EC9A9;
+.donut-tip {
+  position: absolute;
+  padding: 8px 10px;
+  border: 1px solid #c8cdd4;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.97);
+  color: #18202a;
+  box-shadow: 0 6px 18px rgba(24, 32, 42, 0.16);
+  font-size: 0.78rem;
+  pointer-events: none;
 }
 
-.legend-pie .like {
-    color: #AFE4B8;
-}
-
-.legend-pie .dislike {
-    color: #539CC6;
-}
-
-.legend-pie .strongly-dislike {
-    color: #323595;
-}
-
-.legend-pie .unsure {
-    color: #C2D5EB;
-}
-
-@media only screen and (max-width: 600px) {
-    .legend-bar text {
-        font-size: .5frem;
-    }
-
-    .legend-bar rect {
-        width: 5px;
-        height: 5px;
-    }
-
-    div.tooltip {
-        font-size: .5rem;
-    }
-}
-
-body {
-    margin: auto;
-}
-
-h4 {
-    padding: 10px;
+.circle-legend text {
+  alignment-baseline: middle;
 }

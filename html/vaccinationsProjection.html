@@ -1,67 +1,50 @@
-<!-- Source used: https://bl.ocks.org/eetuko/4535086c3fabe76a173b432c44b254c6 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>World vaccination map</title>
+    <link rel="stylesheet" href="../css/site.css" />
+    <link rel="stylesheet" href="../css/vaccinations.css" />
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://unpkg.com/topojson@3"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-title" href="../index.html">COVID-19 vaccination data</a>
+      <nav class="site-nav" aria-label="Visualisations">
+        <a href="../index.html">Overview</a>
+        <a href="vaccinationsProjection.html" aria-current="page">World map</a>
+        <a href="lollipopProjection.html">Country comparison</a>
+        <a href="donutProjection.html">Leading nations</a>
+      </nav>
+    </header>
 
-<!DOCTYPE html>
-<html>
+    <main class="page-shell">
+      <header class="page-intro">
+        <p class="eyebrow">Interactive choropleth</p>
+        <h1>Global vaccination rollout</h1>
+        <p class="lede">Choose a measure, hover for country values and zoom to inspect regional patterns.</p>
+        <p class="data-date"><strong>Historical data — not current:</strong> this map uses an Our World in Data dataset downloaded with a cutoff of <strong>9 March 2021</strong>. Each country shows its latest available record within that dataset, so some values were reported before the cutoff date.</p>
+      </header>
 
-<head>
-  <title>Vaccinations chloropleth</title>
-  <link rel="stylesheet" href="../css/vaccinations.css">
-  <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
-  <script src="https://unpkg.com/topojson@3"></script>
-  <script src="https://unpkg.com/topojson-client@3"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" />
-</head>
+      <div class="chart-toolbar">
+        <label for="metrics">Measure</label>
+        <select id="metrics">
+          <option value="totalVaccinationsAsProportionGlobally">Share of worldwide doses</option>
+          <option value="peopleVaccinatedAsProportionGlobally">Share of people vaccinated worldwide</option>
+          <option value="totalVaccinations">Total vaccinations</option>
+          <option value="peopleVaccinated">People vaccinated</option>
+        </select>
+      </div>
 
-<body>
-  <nav id="navbar">
-    <h3>D3 project</h3>
-    <!--content stacking for smaller screens-->
-    <ul class="nav nav-pills nav-stacked">
-      <!--internal linking to the respective sections-->
-      <a class="nav-link" href="../index.html" rel="internal">
-        <li>Introduction</li>
-      </a>
-      <a class="nav-link" href="../index.html" rel="internal">
-        <li>Key information</li>
-      </a>
-      <a class="nav-link" href="../index.html" rel="internal">
-        <li>About the data</li>
-      </a>
-      <!-- <a class="nav-link" href="./covidProjection.html" rel="internal">
-        <li>Coronavirus chloropleth</li>
-      </a> -->
-      <a class="nav-link" href="vaccinationsProjection.html" rel="internal">
-        <li>Vaccination chloropleth</li>
-      </a>
-      <a class="nav-link" href="./lollipopProjection.html" rel="internal">
-        <li>Vaccination lollipop chart</li>
-      </a>
-      <a class="nav-link" href="./donutProjection.html" rel="internal">
-        <li>Most vaccinated nations</li>
-      </a>
-    </ul>
-
-  </nav>
-
-
-
-  <p>
-    Choose your metric from the list:
-    <select id="metrics">
-      <option value="totalVaccinationsAsProportionGlobally">Total Vaccinated Proportionally</option>
-      <option value="peopleVaccinatedAsProportionGlobally">People Vaccinated Proportionally</option>
-      <option value="totalVaccinations">Total Vaccinations</option>
-      <option value="peopleVaccinated">People Vaccinated</option>
-    </select>
-  </p>
-  <div class="visualisation"> </div>
-  <small>Source: <a href="https://ourworldindata.org/coronavirus-source-data" target="blank">OWID</a></small>
-  <script src="../javascript/vaccinationsProjection.js"></script>
-
-
-</body>
-
+      <div class="chart-frame">
+        <div class="visualisation" aria-label="World choropleth map of COVID-19 vaccination measures"></div>
+        <small class="chart-source">Historical snapshot, not live data · Source: <a href="https://ourworldindata.org/coronavirus-source-data">Our World in Data</a> · Dataset cutoff: 9 March 2021</small>
+      </div>
+    </main>
+    <script src="../javascript/vaccinationsProjection.js"></script>
+  </body>
 </html>

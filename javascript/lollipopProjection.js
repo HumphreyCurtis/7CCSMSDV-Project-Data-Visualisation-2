@@ -4,13 +4,13 @@
  */
 
 var margin = {
-    top: 30,
-    right: 30,
-    bottom: 100,
-    left: 85
+    top: 24,
+    right: 24,
+    bottom: 118,
+    left: 92
   },
-  width = 1000 - margin.left - margin.right,
-  height = 600 - margin.top - margin.bottom;
+  width = 1080 - margin.left - margin.right,
+  height = 620 - margin.top - margin.bottom;
 
 var donutTip = d3.select("body").append("div")
   .attr("class", "donut-tip")
@@ -19,8 +19,9 @@ var donutTip = d3.select("body").append("div")
 // append the svg object to the body of the page
 var svg = d3.select("#my_dataviz")
   .append("svg")
-  .attr("width", width + margin.left + margin.right)
-  .attr("height", height + margin.top + margin.bottom)
+  .attr("viewBox", "0 0 " + (width + margin.left + margin.right) + " " + (height + margin.top + margin.bottom))
+  .attr("role", "img")
+  .attr("aria-label", "Country-by-country vaccination comparison")
   .append("g")
   .attr("transform",
     "translate(" + margin.left + "," + margin.top + ")");
@@ -43,7 +44,12 @@ var circlesColour = "#69b3a2";
 // A function that create / update the plot for a given variable:
 function update(selectedVar) {
 
-  svg.selectAll(".axis").remove(); // This works to adapt axes and delete overlap but could effect future code
+  svg.selectAll(".axis-label").remove();
+  d3.selectAll('.chart-toolbar button')
+    .attr('aria-pressed', function () {
+      return (selectedVar === 'TotalVaccinations' && this.id === 'btn_total') ||
+        (selectedVar === 'PeopleVaccinated' && this.id === 'btn_people') ? 'true' : 'false';
+    });
 
   // Parse the Data
   d3.csv("../data/vaccinationLollipop.csv", function (data) {
@@ -67,8 +73,8 @@ function update(selectedVar) {
         "translate(" + (width / 2) + " ," +
         (height + margin.top + 50) + ")")
       .style("text-anchor", "middle")
-      .text("Countries")
-      .attr('class', 'axis');
+      .text("Country")
+      .attr('class', 'axis-label');
 
     // Add Y axis
     y.domain([0, d3.max(data, function (d) {
@@ -83,8 +89,8 @@ function update(selectedVar) {
       .attr("x", 0 - (height / 2))
       .attr("dy", "1em")
       .style("text-anchor", "middle")
-      .text(selectedVar)
-      .attr('class', 'axis');
+      .text(selectedVar === 'TotalVaccinations' ? 'Total vaccinations' : 'People vaccinated')
+      .attr('class', 'axis-label');
 
 
     // variable u: map data to existing circle
@@ -100,7 +106,6 @@ function update(selectedVar) {
       .transition()
       .duration(1000)
       .attr("x1", function (d) {
-        // console.log(x(d.group));
         return x(d.group);
       })
       .attr("x2", function (d) {
@@ -110,16 +115,18 @@ function update(selectedVar) {
       .attr("y2", function (d) {
         return y(d[selectedVar]);
       })
-      .attr("stroke", "grey");
+      .attr("class", "myLine");
+
+    j.exit().remove();
 
     // variable u: map data to existing circle
     var u = svg.selectAll("circle")
       .data(data);
 
-    if (selectedVar == "PeopleVaccinated") {
-      circlesColour = "#ffa600";
+    if (selectedVar === "PeopleVaccinated") {
+      circlesColour = "#dc7a19";
     } else {
-      circlesColour = "#69b3a2";
+      circlesColour = "#378f83";
     }
 
     // update bars
@@ -138,18 +145,20 @@ function update(selectedVar) {
       .attr("r", 5)
       .attr("fill", circlesColour);
 
-    var circle = svg.selectAll("circle")
+    u.exit().remove();
+
+    svg.selectAll("circle")
       .on('mouseover', function (d) {
         donutTip.transition()
           .duration(50)
           .style("opacity", 1);
-        let keyword = selectedVar;
-        let country = d.group;
-        let num = d.PeopleVaccinated;
-        if (keyword == "TotalVaccinations") {
+        var keyword = selectedVar === 'TotalVaccinations' ? 'Total vaccinations' : 'People vaccinated';
+        var country = d.group;
+        var num = d.PeopleVaccinated;
+        if (selectedVar === "TotalVaccinations") {
           num = d.TotalVaccinations
         }
-        donutTip.html("<h6>" + country + ", " + keyword + ": " + num + "</h6>")
+        donutTip.html("<h6>" + country + "</h6>" + keyword + ": " + d3.format(',')(num))
           .style("left", (d3.event.pageX + 10) + "px")
           .style("top", (d3.event.pageY - 15) + "px");
       })
@@ -157,11 +166,19 @@ function update(selectedVar) {
         donutTip.transition()
           .duration('50')
           .style("opacity", 0);
-      })
+      });
 
-  })
+  });
 
 }
 
 // Initialize plot
 update('TotalVaccinations');
+
+d3.select('#btn_total').on('click', function () {
+  update('TotalVaccinations');
+});
+
+d3.select('#btn_people').on('click', function () {
+  update('PeopleVaccinated');
+});
